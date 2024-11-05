@@ -7,33 +7,46 @@
     <title>Form Table</title>
   </head>
   <body>
+
+    <!-- 整体是一个表格，用来提交内容 -->
     <form action="" onsubmit="">
+
+    <!-- 表格用来将文本限制在单元格中 -->
       <table style="border-collapse: collapse; width: 100%; max-width: 500px; margin: auto;" cellpadding="8" cellspacing="0">
+
+        <!-- 表头 -->
         <tr>
           <td colspan="2" style="text-align: center;">
             <label for="" style="font-size: 30px;"><strong>Personal Information Form</strong></label>
           </td>
         </tr>
+
+        <!-- 每一行的内容 -->
         <tr style="border-bottom: 1px solid #ddd;">
           <td><label for="firstname">First name:</label></td>
           <td><input id="firstname" type="text" style="width: 250px;" placeholder="Please enter your firstname" maxlength="6" autocomplete="off" required></td>
         </tr>
+        
         <tr style="border-bottom: 1px solid #ddd;">
           <td><label for="lastname">Last name:</label></td>
           <td><input id="lastname" type="text" style="width: 250px;" placeholder="Please enter your Lastname" autocomplete="off" required></td>
         </tr>
+        
         <tr style="border-bottom: 1px solid #ddd;">
           <td><label for="email">Email:</label></td>
           <td><input id="email" type="email" style="width: 250px;" placeholder="Please enter your email address" autocomplete="off" required></td>
         </tr>
+        
         <tr style="border-bottom: 1px solid #ddd;">
           <td><label for="password">Password:</label></td>
           <td><input id="password" type="password" style="width: 250px;" placeholder="Enter a secure password" minlength="8" required></td>
         </tr>
+        
         <tr style="border-bottom: 1px solid #ddd;">
           <td><label for="confirm-password">Confirm Password:</label></td>
           <td><input id="confirm-password" type="password" style="width: 250px;" placeholder="Re-enter your password" minlength="8" required></td>
         </tr>
+        
         <tr style="border-bottom: 1px solid #ddd;">
           <td><label>Gender:</label></td>
           <td>
@@ -49,6 +62,7 @@
             <label for="transgender">Transgender</label>
           </td>
         </tr>
+        
         <tr style="border-bottom: 1px solid #ddd;">
           <td><label for="dob">Date of Birth:</label></td>
           <td><input type="date" id="dob" required></td>
@@ -66,6 +80,7 @@
             </select>
           </td>
         </tr>
+        
         <tr style="border-bottom: 1px solid #ddd;">
           <td><label for="code-skills">Select your coding skills:</label></td>
           <td>
@@ -87,16 +102,19 @@
             <label for="Other">Other</label>
           </td>
         </tr>
+        
         <tr style="border-bottom: 1px solid #ddd;">
           <td><label for="textarea">Tell us more about yourself:</label></td>
           <td><textarea id="textarea" cols="30" rows="3"></textarea></td>
         </tr>
+        
         <tr>
           <td colspan="2" style="text-align: center;">
             <input type="reset" value="Reset">
             <input type="submit" value="Submit">
           </td>
         </tr>
+      
       </table>
     </form>
   </body>
